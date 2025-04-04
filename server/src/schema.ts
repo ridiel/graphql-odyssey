@@ -1,6 +1,6 @@
-const gql = require("graphql-tag");
+import { gql } from "graphql-tag";
 
-const schemaTypeDefs = gql`
+export const typeDefs = gql`
   type Query {
     tracksForHome: [Track!]!
   }
@@ -22,5 +22,3 @@ const schemaTypeDefs = gql`
     photo: String
   }
 `;
-
-module.exports = schemaTypeDefs;

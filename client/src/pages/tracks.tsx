@@ -1,4 +1,3 @@
-import React from "react";
 import { Layout, QueryResult } from "../components";
 import { gql } from "../__generated__";
 import { useQuery } from "@apollo/client";
