@@ -37,8 +37,12 @@ const TrackCard: React.FC<{ track: Track }> = ({ track }) => {
     },
   });
 
+  const handleClick = (e: React.MouseEvent<HTMLElement>) => {
+    incrementTrackViews();
+  };
+
   return (
-    <CardContainer to={`/track/${id}`} onClick={incrementTrackViews}>
+    <CardContainer to={`/track/${id}`} onClick={handleClick}>
       <CardContent>
         <CardImageContainer>
           <CardImage src={thumbnail || ""} alt={title} />
